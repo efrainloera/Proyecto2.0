@@ -1,0 +1,285 @@
+nav ul{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    width: 50px;
+}
+nav li{
+    background-color: rgb(255, 255, 255);
+}
+.unico{
+    color: palevioletred;
+}
+.imagen{
+    max-width: 70px;
+    margin-top: -300px;
+    margin-left: 250px;
+}
+.primero{
+    margin-left: 200px;
+    margin-top: -500px;
+    color: rgb(128, 125, 123);
+
+}
+.boton{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 150px;
+    mix-blend-mode: lighten;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-right: 1rem;
+    background: linear-gradient(90deg, rgb(35, 47, 224), rgb(201, 38, 146));
+}
+.primert{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.segundot{
+    margin-top: 60px;
+    margin-left: 200px;
+    font-size: 50px;
+}
+.imagen1{
+    max-width: 30px;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.imagen2{
+    max-width: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.imagen3{
+    max-width: 30px;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+.imagen4{
+    max-width: 30px;
+    margin-top: 30px;
+    margin-left: 14px;
+}
+.imagen5{
+    max-width: 30px;
+    margin-top: 30px;
+    margin-left: 16px;
+}
+.retr{
+    max-width: 150px;
+    margin-top: 0px;
+    margin-left: 940px;
+}
+.listado{
+    margin-top: 40px;
+    margin-left: 200px;
+    
+}
+
+.juego{
+    margin-top: 0px;
+    margin-left: 750px;
+}
+
+#atari,
+.atari2,
+.atari4 {
+  background: #111;
+}
+
+#atari {
+  height: 304px;
+  position: relative;
+  width: 540px;
+}
+
+#atari .pong {
+  left: 20px;
+  position: absolute;
+  top: 2px;
+}
+
+#atari .pong * {
+  background: #fff;
+  position: absolute;
+}
+
+@keyframes ball {
+
+  0%,
+  100% {
+    left: 30px;
+    top: 107px
+  }
+
+  30% {
+    left: 300px;
+    top: 294px
+  }
+
+  50% {
+    left: 464px;
+    top: 192px
+  }
+
+  80% {
+    left: 198px;
+    top: 0px
+  }
+}
+
+@keyframes player1 {
+
+  0%,
+  90%,
+  100% {
+    top: 70px
+  }
+
+  30% {
+    top: 90px
+  }
+
+  50% {
+    top: 80px
+  }
+
+  80% {
+    top: 60px
+  }
+}
+
+@keyframes player2 {
+
+  0%,
+  90%,
+  100% {
+    top: 180px
+  }
+
+  30% {
+    top: 200px
+  }
+
+  50% {
+    top: 190px
+  }
+
+  80% {
+    top: 160px
+  }
+}
+
+#atari .pong .ball {
+  animation: ball 4s linear 0s infinite normal;
+  height: 6px;
+  left: 300px;
+  top: 294px;
+  width: 6px;
+}
+
+#atari .pong .player {
+  height: 54px;
+  width: 8px;
+}
+
+#atari .pong .player1 {
+  animation: player1 4s linear 0s infinite alternate;
+  left: 22px;
+  top: 70px;
+}
+
+#atari .pong .player2 {
+  animation: player2 4s linear 0s infinite normal;
+  left: 470px;
+  top: 180px;
+}
+
+#atari .pong .midfield {
+  height: 240px;
+  left: 247px;
+  top: 30px;
+  width: 6px;
+}
+
+#atari .icon {
+  height: 200px;
+  left: 153px;
+  overflow: hidden;
+  position: absolute;
+  top: 52px;
+  width: 234px;
+}
+
+#atari .icon * {
+  position: absolute;
+}
+
+#atari .side2 {
+  left: 234px;
+  position: absolute;
+  top: 0px;
+  transform: scalex(-1);
+}
+
+.atari1,
+.atari3 {
+  background: #fa000f;
+}
+
+.atari1 {
+  height: 200px;
+  left: 85px;
+  width: 32px;
+}
+
+.atari2 {
+  height: 256px;
+  top: -53px;
+  width: 141px
+}
+
+.atari2 {
+  border-radius: 0 0 141px 141px/256px 256px 256px 256px;
+  left: -34px;
+  top: -22px;
+}
+
+.atari3 {
+  border-radius: 0 0 200px 200px/334px 334px 334px 334px;
+  bottom: 0;
+  height: 334px;
+  left: -101px;
+  top: -135px;
+  width: 200px;
+}
+
+.atari4 {
+  border-radius: 0 0 183px 183px/239px 239px 239px 239px;
+  height: 239px;
+  left: -100px;
+  top: -89px;
+  width: 183px;
+}
+
+#atari:after {
+  background-image: linear-gradient(transparent 33%, #111 33%);
+  background-size: 1px 3px;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
